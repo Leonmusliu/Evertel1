@@ -54,3 +54,35 @@ header{height:74px;background:#fff;border-bottom:1px solid #e9eef3}
   .logo{width:150px}
   .logo-image{width:150px}
 }
+
+
+/* FINAL EVERTEL HERO IMAGE + CTA */
+.hero-photo{
+  position:relative;
+  min-height:535px;
+  background-image:
+    linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,.92) 5%,rgba(255,255,255,.35) 17%,rgba(255,255,255,0) 32%),
+    url("assets/hero.jpg");
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.hero-photo::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(255,255,255,.72) 0%,rgba(255,255,255,.18) 14%,rgba(255,255,255,0) 30%);
+}
+.hero-note,.hero-badge{display:none!important}
+.hero-copy>.btn{
+  min-width:330px;
+  height:58px;
+  padding:0 28px;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:800;
+}
+@media(max-width:850px){
+  .hero-copy>.btn{min-width:290px;height:54px;font-size:15px}
+}
