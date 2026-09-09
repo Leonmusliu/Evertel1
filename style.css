@@ -23,3 +23,15 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#738095;font-size:1
 @media(max-width:850px){.container{width:calc(100% - 36px)}header{height:70px}.menu{display:none}.hero-grid,.location-grid,.story{grid-template-columns:1fr}.hero-copy{padding:55px 0 45px}.hero h1{font-size:48px;letter-spacing:-2.5px}.hero-photo{min-height:350px}.hero-note{right:15px;top:28px;font-size:19px}.hero-badge{right:15px;bottom:15px}.features,.service-grid,.team{grid-template-columns:1fr}.section{padding:52px 0}.section-head{display:block}.section-head p{margin-top:15px}.location-copy{padding:50px 0 35px}.location-photo{min-height:330px}.stats{gap:12px}.stat{padding-right:14px;margin-right:14px}.stat b{font-size:25px}.inner{padding:52px 0 60px}.inner h1{font-size:46px}.about-stats{grid-template-columns:1fr 1fr;gap:22px}.about-stats>div:nth-child(2){border:0}.foot{display:block}.foot-links{margin-top:15px}}
 
 .page-wrap{min-height:calc(100vh - 150px)}.breadcrumb{font-size:13px;color:#8090a4;margin:0 0 18px}.breadcrumb a{color:#1498e8;font-weight:700}
+/* EVERTEL header redesign - based on supplied reference/logo */
+header{height:74px;background:#fff;border-bottom:1px solid #edf1f5;backdrop-filter:none}
+.nav{height:74px}
+.logo{width:160px;height:44px;display:flex;align-items:center;font-size:0;letter-spacing:0}
+.logo-image{display:block;width:154px;height:auto;max-height:42px;object-fit:contain;object-position:left center}
+.menu{gap:34px;font-size:14px;font-weight:600}
+.menu a{height:74px;color:#1a2533;white-space:nowrap}
+.menu a:hover,.menu a.active{color:var(--blue)}
+.menu a.active:after{display:none}
+.nav>.btn{min-width:225px;height:46px;padding:0 20px;border-radius:8px;font-size:13px}
+@media(max-width:1050px){.menu{gap:20px}.nav>.btn{min-width:195px}.logo{width:145px}.logo-image{width:145px}}
+@media(max-width:850px){header,.nav{height:70px}.logo{width:145px}.logo-image{width:145px}.nav>.btn{min-width:0;height:42px;padding:0 14px;font-size:12px}}
