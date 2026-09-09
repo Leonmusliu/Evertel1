@@ -1,14 +1,3 @@
-EVERTEL Website – neues Design
+EVERTEL Website – aktualisierte Version
 
-Enthalten:
-- index.html
-- leistungen.html
-- ueber-uns.html
-- faq.html
-- kontakt.html
-- style.css
-- assets/evertel-logo.png
-- assets/hero.jpg
-- assets/city.jpg
-
-Das EVERTEL-Logo ist als transparente PNG eingebunden. Auf GitHub alle Dateien ersetzen bzw. hochladen und committen. Wenn Vercel mit dem Repository verbunden ist, wird die Website danach automatisch neu deployed.
+Änderungen: größeres EVERTEL-Logo, weicher Übergang zwischen hellblauem Hero-Bereich und Frauenfoto, Foto bis zum rechten Rand, moderne Icons in den 6 Leistungskarten.
