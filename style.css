@@ -86,3 +86,63 @@ header{height:74px;background:#fff;border-bottom:1px solid #e9eef3}
 @media(max-width:850px){
   .hero-copy>.btn{min-width:290px;height:54px;font-size:15px}
 }
+
+
+/* FINAL HERO V2 — entire photo visible, flush to the right edge */
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:#fff;
+}
+.hero-grid{
+  position:relative;
+  display:grid;
+  grid-template-columns:52% 48%;
+  min-height:535px;
+}
+.hero-copy{
+  position:relative;
+  z-index:3;
+  padding:91px 20px 72px 0;
+}
+.hero-photo{
+  position:relative;
+  z-index:1;
+  min-height:535px;
+  background-image:
+    linear-gradient(90deg,#fff 0%,rgba(255,255,255,.94) 7%,rgba(255,255,255,.48) 18%,rgba(255,255,255,0) 34%),
+    url("assets/hero.jpg");
+  background-color:#fff;
+  background-repeat:no-repeat,no-repeat;
+  background-position:left center,right center;
+  background-size:100% 100%,auto 100%;
+}
+/* Make the image extend visually to the very right edge of the viewport */
+.hero-grid{
+  width:100%;
+  max-width:none;
+}
+.hero-grid .hero-copy{
+  padding-left:max(20px,calc((100vw - 1240px)/2));
+}
+@media(max-width:850px){
+  .hero-grid{grid-template-columns:1fr;min-height:auto}
+  .hero-copy{padding:60px 24px 40px!important}
+  .hero-photo{
+    min-height:420px;
+    background-image:
+      linear-gradient(180deg,#fff 0%,rgba(255,255,255,.35) 20%,rgba(255,255,255,0) 40%),
+      url("assets/hero.jpg");
+    background-position:center top,center center;
+    background-size:100% 100%,auto 100%;
+  }
+}
+/* Larger lower CTA only */
+.hero-copy>.btn{
+  min-width:330px;
+  height:58px;
+  padding:0 28px;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:800;
+}
