@@ -1,0 +1,1 @@
+EVERTEL – echte Multi-Page-Webseite. Jede Navigation öffnet eine separate HTML-Seite.
