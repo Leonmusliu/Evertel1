@@ -34,3 +34,13 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#738095;font-size:1
 .hero-badge .flag{font-size:31px}
 @media(min-width:851px){.hero-grid{grid-template-columns:52% 48%}.hero-copy{padding-left:0}.hero-photo{margin-right:calc((100vw - 1180px)/-2);padding-right:calc((100vw - 1180px)/2);background-size:100% 100%,cover;background-position:left center,center center}}
 @media(max-width:850px){.logo{width:165px;height:44px}.logo-image{width:160px;max-height:44px}.hero-photo{background-size:100% 100%,cover}.hero-photo:after{background:linear-gradient(90deg,rgba(244,249,253,.55),transparent 42%)}}
+
+
+/* EVERTEL final visual adjustments */
+.logo{width:210px;height:56px}
+.logo-image{width:204px;max-height:56px}
+.hero-photo{background-image:linear-gradient(90deg,rgba(244,249,253,1) 0%,rgba(244,249,253,.96) 6%,rgba(244,249,253,.78) 14%,rgba(244,249,253,.42) 24%,rgba(244,249,253,.12) 34%,rgba(244,249,253,0) 47%),url("assets/hero.jpg");background-size:100% 100%,cover;background-position:left center,center center;background-repeat:no-repeat}
+.hero-photo:after{background:linear-gradient(90deg,rgba(244,249,253,.28),rgba(244,249,253,0) 42%)}
+.hero-copy>.btn{min-width:310px;padding:17px 25px;font-size:15px}
+.hero-note,.hero-badge{display:none!important}
+@media(max-width:850px){.logo{width:175px;height:47px}.logo-image{width:170px;max-height:47px}.hero-copy>.btn{min-width:0;width:auto;padding:15px 20px;font-size:14px}.hero-photo{background-size:100% 100%,cover;background-position:left center,center center}}
