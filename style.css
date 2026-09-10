@@ -91,12 +91,16 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#738095;font-size:1
   stroke-linejoin:round;
 }
 
+
+/* Homepage CTA: primary button visibly larger than FAQ button */
+.hero-actions > .btn{min-width:310px;min-height:56px;padding:18px 25px;font-size:15px;box-sizing:border-box}
+
 /* FAQ links */
-.hero-actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
 .faq-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;color:#111827;text-decoration:none;font-weight:800;background:#fff;border:1.5px solid #111827;border-radius:9px;transition:background .2s,color .2s,transform .2s,box-shadow .2s;box-shadow:0 3px 10px rgba(15,23,42,.06)}
 .faq-link:hover{background:#111827;color:#fff;transform:translateY(-1px);box-shadow:0 7px 16px rgba(15,23,42,.12)}
 .faq-link span{margin-left:2px}
-.faq-link-main{font-size:15px;letter-spacing:.1px;padding:17px 25px;min-height:52px;width:310px;box-sizing:border-box}
+.faq-link-main{font-size:15px;letter-spacing:.1px;padding:18px 25px;min-height:56px;width:220px;box-sizing:border-box}
 .faq-link-services{font-size:15px;padding:17px 25px;margin:4px 0 28px auto;min-height:52px;width:310px;box-sizing:border-box;display:flex}
 .faq-link-services:after{display:none}
-@media(max-width:850px){.hero-actions{gap:18px}.faq-link-main{font-size:14px;padding:14px 18px;min-height:48px;min-width:0}.faq-link-services{margin:4px 0 22px auto;width:100%;max-width:310px}}
+@media(max-width:850px){.hero-actions{gap:12px}.hero-actions > .btn{min-width:0;width:auto;min-height:50px;padding:15px 18px;font-size:14px}.faq-link-main{font-size:14px;padding:15px 18px;min-height:50px;width:190px}.faq-link-services{margin:4px 0 22px auto;width:100%;max-width:310px}}
