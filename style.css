@@ -69,3 +69,24 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#738095;font-size:1
 @media(max-width:850px){
   .location-photo{min-height:330px;background-size:100% 100%,cover;background-position:left center,center center}
 }
+
+/* Dienstleistungs-Karten: blaue Outline-Icons wie auf der Referenz */
+.service-card .ico{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  background:#edf7ff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:20px;
+}
+.service-card .ico svg{
+  width:36px;
+  height:36px;
+  fill:none;
+  stroke:#1597e8;
+  stroke-width:2.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
