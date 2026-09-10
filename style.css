@@ -90,3 +90,13 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#738095;font-size:1
   stroke-linecap:round;
   stroke-linejoin:round;
 }
+
+/* FAQ links */
+.hero-actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.faq-link{color:#7b8796;text-decoration:none;font-weight:700;transition:color .2s,transform .2s}
+.faq-link:hover{color:#4f5d6c;transform:translateX(2px)}
+.faq-link span{margin-left:5px}
+.faq-link-main{font-size:15px;letter-spacing:.1px}
+.faq-link-services{display:inline-block;margin:4px 0 28px;font-size:13px;position:relative;padding-bottom:3px}
+.faq-link-services:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:#aeb7c2}
+@media(max-width:850px){.hero-actions{gap:18px}.faq-link-main{font-size:14px}.faq-link-services{margin-bottom:22px}}
