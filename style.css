@@ -32,7 +32,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#738095;font-size:1
 .hero-photo .hero-note,.hero-photo .hero-badge{z-index:3}
 .hero-badge{padding:15px 18px;font-size:14px}
 .hero-badge .flag{font-size:31px}
-@media(min-width:851px){.hero-grid{grid-template-columns:52% 48%}.hero-copy{padding-left:0}.hero-photo{margin-right:calc((100vw - 1180px)/-2);padding-right:calc((100vw - 1180px)/2);background-size:100% 100%,cover;background-position:left center,center center}}
+@media(min-width:851px){.hero-grid{grid-template-columns:52% 48%}.hero-copy{padding-left:0}.hero-photo{margin-right:calc((100vw - 1180px)/-2);padding-right:calc((100vw - 1180px)/2);background-size:100% 100%,cover;background-position:left center,center center}.location-photo{margin-right:calc((100vw - 1180px)/-2);background-position:center center;background-size:cover}}
 @media(max-width:850px){.logo{width:165px;height:44px}.logo-image{width:160px;max-height:44px}.hero-photo{background-size:100% 100%,cover}.hero-photo:after{background:linear-gradient(90deg,rgba(244,249,253,.55),transparent 42%)}}
 
 
