@@ -44,3 +44,14 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#738095;font-size:1
 .hero-copy>.btn{min-width:310px;padding:17px 25px;font-size:15px}
 .hero-note,.hero-badge{display:none!important}
 @media(max-width:850px){.logo{width:175px;height:47px}.logo-image{width:170px;max-height:47px}.hero-copy>.btn{min-width:0;width:auto;padding:15px 20px;font-size:14px}.hero-photo{background-size:100% 100%,cover;background-position:left center,center center}}
+
+
+/* EVERTEL moving service strip */
+.service-ticker{width:100%;overflow:hidden;background:#1597e8;color:#fff;border-top:1px solid rgba(255,255,255,.15);border-bottom:1px solid rgba(0,0,0,.06);position:relative;z-index:5;}
+.service-ticker-track{display:flex;width:max-content;animation:evertelTicker 26s linear infinite;will-change:transform;}
+.service-ticker-group{display:flex;align-items:center;white-space:nowrap;min-height:46px;padding:0 8px;}
+.service-ticker span{font-size:13px;font-weight:800;letter-spacing:.13em;padding:0 28px;}
+.service-ticker b{font-size:18px;font-weight:700;opacity:.75;}
+@keyframes evertelTicker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (max-width:700px){.service-ticker-group{min-height:40px}.service-ticker span{font-size:11px;letter-spacing:.1em;padding:0 18px}.service-ticker b{font-size:15px}}
+@media (prefers-reduced-motion:reduce){.service-ticker-track{animation:none}}
