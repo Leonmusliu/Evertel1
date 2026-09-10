@@ -55,3 +55,17 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#738095;font-size:1
 @keyframes evertelTicker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (max-width:700px){.service-ticker-group{min-height:40px}.service-ticker span{font-size:11px;letter-spacing:.1em;padding:0 18px}.service-ticker b{font-size:15px}}
 @media (prefers-reduced-motion:reduce){.service-ticker-track{animation:none}}
+
+/* EVERTEL Standortbild – neues Kosovo-Foto, weich eingefadet und ohne Textoverlay */
+.location-photo{
+  background-image:linear-gradient(90deg,#f4faff 0%,rgba(244,250,255,.96) 7%,rgba(244,250,255,.78) 16%,rgba(244,250,255,.45) 26%,rgba(244,250,255,.16) 36%,rgba(244,250,255,0) 48%),url("assets/city.jpg");
+  background-size:100% 100%,cover;
+  background-position:left center,center center;
+  background-repeat:no-repeat;
+  min-height:390px;
+}
+.location-photo .quote,.location-photo .stars{display:none!important}
+
+@media(max-width:850px){
+  .location-photo{min-height:330px;background-size:100% 100%,cover;background-position:left center,center center}
+}
