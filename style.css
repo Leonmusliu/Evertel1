@@ -143,3 +143,49 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#738095;font-size:1
 .decor-d{left:28px;bottom:25px;font-size:28px;transform:rotate(15deg)}
 @media(max-width:850px){.team-single{grid-template-columns:1fr}.person-featured{grid-template-columns:1fr;gap:20px;padding:16px}.avatar-photo{height:300px}.person-featured .person-info{padding:2px 5px 8px}.person-featured h3{font-size:26px}}
 @media(max-width:520px){.avatar-photo{height:245px}}
+
+/* Über uns – genaues Karten-Layout der Referenz, nur mit Leon */
+.about-page{background:#fff}
+.about-head{margin-bottom:34px}
+.about-head h1{font-size:56px;line-height:1.02;letter-spacing:-3px;margin:10px 0 16px;color:#0a111c}
+.about-head .lead{color:#718095;font-size:17px;line-height:1.6;margin:0}
+.exact-team-layout{display:flex;justify-content:center;margin:10px 0 78px}
+.person-card-exact{width:min(430px,100%);background:#fff;border:1px solid #dce6ee;border-radius:18px;padding:22px;box-shadow:0 12px 32px rgba(18,49,78,.07);transition:.2s}
+.person-card-exact:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(18,49,78,.11)}
+.person-card-exact .avatar-photo{height:315px;width:100%;border-radius:14px;background:#edf3f8;overflow:hidden;position:relative}
+.person-card-exact .avatar-photo img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 28%}
+.person-card-exact .person-info{padding:17px 0 0}
+.person-card-exact h3{font-size:24px;line-height:1.2;margin:0 0 4px;color:#101827}
+.person-card-exact .role{font-size:15px;color:#1597e8;font-weight:700}
+.person-card-exact .contact-lines{color:#7a8799;font-size:13px;line-height:1.8;margin:13px 0 12px}
+.person-card-exact .pills{display:flex;gap:9px;flex-wrap:wrap;padding-top:12px;border-top:1px solid #e5ebf0}
+.person-card-exact .pill{background:#edf7fd;color:#71839a;border-radius:999px;padding:7px 12px;font-size:12px}
+.person-card-exact .decor{position:absolute;color:#1597e8;font-weight:900;line-height:1;pointer-events:none}
+.person-card-exact .decor-a{left:25px;top:25px;font-size:25px;transform:rotate(-15deg)}
+.person-card-exact .decor-b{right:25px;top:27px;font-size:18px;letter-spacing:5px}
+.person-card-exact .decor-c{right:27px;bottom:25px;font-size:28px;transform:rotate(10deg)}
+.person-card-exact .decor-d{left:28px;bottom:27px;font-size:30px;transform:rotate(-12deg)}
+.exact-story{display:grid;grid-template-columns:.9fr 1.1fr;gap:75px;padding:0 0 88px}
+.exact-story h2{font-size:47px;line-height:1.03;letter-spacing:-2.3px;margin:9px 0 15px;color:#0a111c}
+.story-line{width:62px;height:4px;border-radius:5px;background:#1597e8;margin:0 0 28px}
+.exact-story>div:first-child p{color:#718095;font-size:14px;line-height:1.65;max-width:540px;margin:0 0 20px}
+.story-values{padding-top:0}
+.exact-story .value{display:grid;grid-template-columns:92px 1fr;gap:20px;align-items:start;padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid #e3eaf0}
+.exact-story .value:last-child{margin-bottom:0;border-bottom:0}
+.exact-story .value .ico{width:72px;height:72px;margin:0;border-radius:15px;background:#eaf6fd;color:#1597e8;font-size:30px;border:1px solid #d8edf9}
+.exact-story .value h3{font-size:20px;margin:3px 0 7px;color:#101827}
+.exact-story .value p{font-size:13.5px;line-height:1.55;color:#718095;margin:0}
+@media(max-width:850px){.about-head h1{font-size:45px;letter-spacing:-2px}.exact-story{grid-template-columns:1fr;gap:42px}.exact-team-layout{margin-bottom:58px}.person-card-exact{max-width:460px}.person-card-exact .avatar-photo{height:300px}}
+@media(max-width:520px){.about-head .lead{font-size:15px}.person-card-exact{padding:15px}.person-card-exact .avatar-photo{height:250px}.exact-story h2{font-size:38px}.exact-story .value{grid-template-columns:70px 1fr;gap:14px}.exact-story .value .ico{width:58px;height:58px;font-size:24px}}
+
+/* Über uns: drei gleich grosse Teamkarten – vollständige Bilder ohne Muster */
+.exact-team-layout{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;justify-content:initial;margin:10px 0 78px}
+.person-card-exact{width:auto;min-width:0}
+.person-card-exact .avatar-photo,.person-card-exact .avatar-placeholder{height:auto;aspect-ratio:3 / 4;width:100%;border-radius:14px;background:#edf3f8;overflow:hidden;position:relative}
+.person-card-exact .avatar-photo img{width:100%;height:100%;display:block;object-fit:contain;object-position:center;background:#edf3f8}
+.person-card-exact .decor{display:none}
+.avatar-placeholder{display:grid!important;place-items:center}
+.placeholder-icon{width:86px;height:110px;position:relative}
+.placeholder-icon:before{content:"";position:absolute;width:42px;height:42px;border-radius:50%;background:#b8c0c9;left:22px;top:0}
+.placeholder-icon:after{content:"";position:absolute;width:86px;height:54px;border-radius:55px 55px 8px 8px;background:#b8c0c9;left:0;bottom:0}
+@media(max-width:850px){.exact-team-layout{grid-template-columns:1fr}.person-card-exact{max-width:460px;margin:0 auto;width:100%}.person-card-exact .avatar-photo,.person-card-exact .avatar-placeholder{aspect-ratio:3 / 4;height:auto}}
